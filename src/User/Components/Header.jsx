@@ -12,7 +12,7 @@ const [toggle,setToggle] = useState(false)
       <div className='grid grid-cols-3 p-3'>
         {/* Logo */}
         <div className='flex items-center'>
-          <img width={'50px'} height={'50px'} src="https://static.vecteezy.com/system/resources/thumbnails/026/159/037/small/hand-drawn-pile-of-books-sticker-of-a-cartoon-stack-of-books-generative-ai-png.png" alt="logo" />
+          <img width={'50px'} height={'50px'} src="https://png.pngtree.com/png-vector/20241120/ourmid/pngtree-vibrant-collection-of-stationery-items-featuring-books-and-pencils-for-learning-png-image_14499688.png" alt="logo" />
           <h1 className='text-2xl ms-3 font-bold md:hidden'>Bookstore</h1>
         </div>
         {/* Title */}
@@ -31,7 +31,7 @@ const [toggle,setToggle] = useState(false)
        <nav className='bg-black w-full text-white md:flex justify-center items-center p-3'>
           {/* Menu & login at small screen */}
           <div className='flex justify-between items-center text-2xl md:hidden'>
-            <button onClick={()=>setToggle(toggle)}><FaBars/></button>
+            <button onClick={()=>setToggle(!toggle)}><FaBars/></button>
             <Link to={'/login'} className='flex justify-center items-center ms-5 border rounded px-3 py-2 hover:bg-black hover:text-white'><FaUser className='me-1'/>Login</Link>
           </div>
           <ul className={toggle? 'flex flex-col':'md:flex hidden'}>
