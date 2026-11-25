@@ -4,6 +4,8 @@ import Footer from '../../Components/Footer'
 import Edit from '../Components/Edit'
 import { FaCircleCheck } from 'react-icons/fa6'
 import UploadBooks from '../Components/UploadBooks'
+import UploadStatus from '../Components/UploadStatus'
+import PurchaseHistory from '../Components/PurchaseHistory'
 
 function Profile() {
 
@@ -31,8 +33,8 @@ const [currentTab,setCurrentTab] = useState(1)
         <p onClick={()=>(setCurrentTab(3))} className={currentTab==3 ? 'p-4 border-gray-200 border-l border-t border-r rounded cursor-pointer':'p-4 border-gray-200 border-b rounded cursor-pointer'}>Purchase History</p>
       </div>
       { currentTab==1 && <div><UploadBooks/></div>}
-      { currentTab==2 && <div>Upload Book Status</div>}
-      { currentTab==3 && <div>Purchase History</div>}
+      { currentTab==2 && <div><UploadStatus/></div>}
+      { currentTab==3 && <div><PurchaseHistory/></div>}
     <Footer/>
     </>
   )
