@@ -32,7 +32,7 @@ function AdminSettings() {
           <p className='text-justify my-10'>Your profile settings help ensure your administrative tools work the way you need them to — securely, efficiently, and with complete control. Thank you for keeping the platform organized and running smoothly. Continue managing, updating, and improving the system — one step at a time. 🚀📚</p>
           </div>
           {/* 2nd Section */}          
-          <div className='flex justify-center items-center my-5 flex-col bg-blue-100 p-10'>
+          <div className='flex justify-center items-center m-10 flex-col bg-blue-100 p-10'>
                     <label htmlFor="userProfile">
                       <input type="file" id='userProfile' hidden />
                       <img style={{height:'100px', width:'100px', borderRadius:'50%'}} className='z-51' src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" alt="user" />
